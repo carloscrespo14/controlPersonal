@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "required": [
+      "idRol",
+      "nombreRol"
+    ],
+    "properties": {
+      "idRol": {
+        "type": "string",
+        "uniqueItems": true,
+        "description": "id del rol"
+      },
+      "nombreRol": {
+        "type": "string",
+        "description": "rombre del rol"
+      }
+    }
+  }
+  

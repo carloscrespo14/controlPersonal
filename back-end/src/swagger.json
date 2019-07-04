@@ -1,0 +1,153 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Documentación del API control de entrada",
+    "description": "Definición de servicios"
+  },
+  "host": "/",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Seguridad",
+      "description": "API de Seguridad"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/seguridad/usuario/registro": {
+      "post": {
+        "tags": [
+          "Seguridad"
+        ],
+        "description": "Registro de Usuario",
+        "operationId": "registroUsuario",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "registro a guardar",
+            "required": true,
+            "schema": {
+              "$ref": "/schemas/registro.schema.json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "registro guardado",
+            "schema": {
+              "$ref": "/schemas/registro.schema.json"
+            }
+          }
+        }
+      }
+    },
+
+    "/seguridad/login": {
+      "post": {
+        "tags": [
+          "Seguridad"
+        ],
+        "description": "Login de Usuario",
+        "operationId": "login",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "login de usuario",
+            "required": true,
+            "schema": {
+              "$ref": "/schemas/login.schema.json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "registro guardado",
+            "schema": {
+              "$ref": "/schemas/login.schema.json"
+            }
+          }
+        }
+      }
+    },
+
+    "/seguridad/rol/registro": {
+      "post": {
+        "tags": [
+          "Rol"
+        ],
+        "description": "Rol de usuario",
+        "operationId": "login",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Rolde usuario",
+            "required": true,
+            "schema": {
+              "$ref": "/schemas/rol_array.schema.json"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": "Bearer token",
+            "type": "string",
+            "format": "Bearer token",
+            "default": "Bearer "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "roles guardados",
+            "schema": {
+              "$ref": "/schemas/rol_array.schema.json"
+            }
+          }
+        }
+      }
+    },
+
+    "/seguridad/rol/roles": {
+      "get": {
+        "tags": [
+          "Rol"
+        ],
+        "descripcion": "Catalago de Roles",
+        "operationId": "traerRoles",
+        "parameters":[
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "description": "Bearer token",
+            "type": "string",
+            "format": "Bearer token",
+            "default": "Bearer "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "consulta los roles disponibles",
+            "schema": {
+              "$ref": "/schemas/rol_array.schema.json"
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

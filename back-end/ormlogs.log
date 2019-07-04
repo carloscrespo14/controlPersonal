@@ -1,0 +1,141 @@
+[2019-07-04T18:24:21.841Z][QUERY]: START TRANSACTION
+[2019-07-04T18:24:21.854Z][QUERY]: ROLLBACK
+[2019-07-04T18:24:52.158Z][QUERY]: START TRANSACTION
+[2019-07-04T18:24:52.159Z][QUERY]: ROLLBACK
+[2019-07-04T18:28:39.390Z][QUERY]: START TRANSACTION
+[2019-07-04T18:28:39.394Z][QUERY]: ROLLBACK
+[2019-07-04T18:29:30.185Z][QUERY]: START TRANSACTION
+[2019-07-04T18:29:30.189Z][QUERY]: ROLLBACK
+[2019-07-04T18:32:02.187Z][QUERY]: START TRANSACTION
+[2019-07-04T18:32:02.194Z][QUERY]: INSERT INTO "Seguridad"("userId", "email", "password") VALUES ($1, $2, $3) -- PARAMETERS: ["string","string","string"]
+[2019-07-04T18:32:02.267Z][QUERY]: COMMIT
+[2019-07-04T18:32:31.164Z][QUERY]: START TRANSACTION
+[2019-07-04T18:32:31.166Z][QUERY]: INSERT INTO "Seguridad"("userId", "email", "password") VALUES ($1, $2, $3) -- PARAMETERS: ["string","string","string"]
+[2019-07-04T18:32:31.193Z][FAILED QUERY]: INSERT INTO "Seguridad"("userId", "email", "password") VALUES ($1, $2, $3) -- PARAMETERS: ["string","string","string"]
+[2019-07-04T18:32:31.193Z][QUERY ERROR]: error: llave duplicada viola restricción de unicidad «Seguridad_pkey»
+[2019-07-04T18:32:31.195Z][QUERY]: COMMIT
+[2019-07-04T18:34:08.652Z][QUERY]: START TRANSACTION
+[2019-07-04T18:34:08.660Z][QUERY]: INSERT INTO "Seguridad"("userId", "email", "password") VALUES ($1, $2, $3) -- PARAMETERS: ["string","string","string"]
+[2019-07-04T18:34:08.664Z][FAILED QUERY]: INSERT INTO "Seguridad"("userId", "email", "password") VALUES ($1, $2, $3) -- PARAMETERS: ["string","string","string"]
+[2019-07-04T18:34:08.664Z][QUERY ERROR]: error: llave duplicada viola restricción de unicidad «Seguridad_pkey»
+[2019-07-04T18:34:08.668Z][QUERY]: COMMIT
+[2019-07-04T19:39:06.874Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T19:42:38.833Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T19:50:30.176Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T19:55:21.383Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T19:55:33.413Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T19:58:47.741Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T21:08:41.851Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T21:10:10.299Z][QUERY]: START TRANSACTION
+[2019-07-04T21:10:10.309Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:10:10.310Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:10:10.311Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:10:10.311Z][QUERY]: COMMIT
+[2019-07-04T21:10:10.338Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:10:10.338Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:10:10.340Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:10:10.340Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:10:10.341Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:10:10.341Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:14:20.317Z][QUERY]: START TRANSACTION
+[2019-07-04T21:14:20.329Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:20.331Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:20.331Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:14:20.332Z][QUERY]: COMMIT
+[2019-07-04T21:14:20.333Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:20.333Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:14:20.335Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:20.335Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:14:20.336Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:14:20.336Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:14:38.314Z][QUERY]: START TRANSACTION
+[2019-07-04T21:14:38.317Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:38.318Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:38.318Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:14:38.318Z][QUERY]: COMMIT
+[2019-07-04T21:14:38.320Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:38.320Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:14:38.321Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:14:38.321Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:14:38.322Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:14:38.322Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:18:39.396Z][QUERY]: START TRANSACTION
+[2019-07-04T21:18:39.404Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:18:39.406Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:18:39.407Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:18:39.407Z][QUERY]: COMMIT
+[2019-07-04T21:18:39.409Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:18:39.409Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:18:39.411Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:18:39.411Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:18:39.412Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:18:39.412Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:20:03.412Z][QUERY]: START TRANSACTION
+[2019-07-04T21:20:03.427Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:20:03.429Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:20:03.430Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:20:03.430Z][QUERY]: COMMIT
+[2019-07-04T21:20:03.432Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:20:03.432Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:20:03.434Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:20:03.434Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:20:03.436Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:20:03.436Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:23:17.049Z][QUERY]: START TRANSACTION
+[2019-07-04T21:23:17.064Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:23:17.065Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:23:17.066Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:23:17.066Z][QUERY]: COMMIT
+[2019-07-04T21:23:17.068Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:23:17.068Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:23:17.070Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:23:17.070Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:23:17.071Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:23:17.071Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:24:36.156Z][QUERY]: START TRANSACTION
+[2019-07-04T21:24:36.173Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:24:36.175Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:24:36.176Z][QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:24:36.176Z][QUERY]: COMMIT
+[2019-07-04T21:24:36.178Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:24:36.178Z][QUERY ERROR]: error: no existe la columna «NombreRol» en la relación «Rol»
+[2019-07-04T21:24:36.184Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:24:36.184Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:24:36.187Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "NombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:24:36.187Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:26:28.216Z][QUERY]: START TRANSACTION
+[2019-07-04T21:26:28.233Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:26:28.235Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:26:28.235Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:26:28.236Z][QUERY]: COMMIT
+[2019-07-04T21:26:28.242Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["a0"]
+[2019-07-04T21:26:28.242Z][QUERY ERROR]: error: llave duplicada viola restricción de unicidad «Rol_pkey»
+[2019-07-04T21:26:28.249Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT) -- PARAMETERS: ["e0"]
+[2019-07-04T21:26:28.249Z][QUERY ERROR]: error: transacción abortada, las órdenes serán ignoradas hasta el fin de bloque de transacción
+[2019-07-04T21:29:41.617Z][QUERY]: START TRANSACTION
+[2019-07-04T21:29:41.628Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol" WHERE "Rol"."idRol" IN ($1, $2, $3) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:29:41.630Z][QUERY]: COMMIT
+[2019-07-04T21:29:41.640Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT), ($2, DEFAULT), ($3, DEFAULT) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:29:41.643Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT), ($2, DEFAULT), ($3, DEFAULT) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:29:41.643Z][QUERY ERROR]: error: llave duplicada viola restricción de unicidad «Rol_pkey»
+[2019-07-04T21:31:04.285Z][QUERY]: START TRANSACTION
+[2019-07-04T21:31:04.296Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol" WHERE "Rol"."idRol" IN ($1, $2, $3) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:31:04.298Z][QUERY]: COMMIT
+[2019-07-04T21:31:04.307Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT), ($2, DEFAULT), ($3, DEFAULT) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:31:04.310Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT), ($2, DEFAULT), ($3, DEFAULT) -- PARAMETERS: ["a0","a0","e0"]
+[2019-07-04T21:31:04.310Z][QUERY ERROR]: error: llave duplicada viola restricción de unicidad «Rol_pkey»
+[2019-07-04T21:31:42.039Z][QUERY]: START TRANSACTION
+[2019-07-04T21:31:42.042Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol" WHERE "Rol"."idRol" IN ($1, $2, $3) -- PARAMETERS: ["a0","a1","e0"]
+[2019-07-04T21:31:42.042Z][QUERY]: COMMIT
+[2019-07-04T21:31:42.046Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, DEFAULT), ($2, DEFAULT), ($3, DEFAULT) -- PARAMETERS: ["a0","a1","e0"]
+[2019-07-04T21:52:08.250Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol"
+[2019-07-04T22:04:10.839Z][QUERY]: SELECT "Seguridad"."userId" AS "Seguridad_userId", "Seguridad"."email" AS "Seguridad_email", "Seguridad"."password" AS "Seguridad_password" FROM "Seguridad" "Seguridad" WHERE "Seguridad"."email" = $1 LIMIT 1 -- PARAMETERS: ["string"]
+[2019-07-04T22:04:38.146Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol"
+[2019-07-04T22:11:42.175Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol"
+[2019-07-04T22:11:55.809Z][QUERY]: START TRANSACTION
+[2019-07-04T22:11:55.816Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol" WHERE "Rol"."idRol" IN ($1) -- PARAMETERS: ["string"]
+[2019-07-04T22:11:55.817Z][QUERY]: COMMIT
+[2019-07-04T22:11:55.825Z][QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, $2) -- PARAMETERS: ["string","string"]
+[2019-07-04T22:11:55.867Z][FAILED QUERY]: INSERT INTO "Rol"("idRol", "nombreRol") VALUES ($1, $2) -- PARAMETERS: ["string","string"]
+[2019-07-04T22:11:55.867Z][QUERY ERROR]: error: el valor es demasiado largo para el tipo character varying(2)
+[2019-07-04T22:18:32.645Z][QUERY]: SELECT "Rol"."idRol" AS "Rol_idRol", "Rol"."nombreRol" AS "Rol_nombreRol" FROM "Rol" "Rol"

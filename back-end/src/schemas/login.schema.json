@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "required": [
+      "email",
+      "password"
+    ],
+    "properties": {
+      "email": {
+        "type": "string",
+        "uniqueItems": true,
+        "description": "correo del usuario"
+      },
+      "password": {
+        "type": "string",
+        "description": "Hash password"
+      }
+    }
+  }
+  

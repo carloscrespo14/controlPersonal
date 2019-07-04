@@ -1,0 +1,28 @@
+[
+  {
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "main",
+    "synchronize": false,
+    "connectionTimeout": 120000,
+    "requestTimeout": 120000,
+    "logging": [
+      "query",
+      "error"
+    ],
+    "logger": "file",
+    "entities": [
+      "dist/bd/models/**/*.js"
+    ],
+    "migrations": [
+      "dist/bd/migration/**/*.js"
+    ],
+    "subscribers": [
+      "dist/bd/subscriber/**/*.js"
+    ]
+  }
+]

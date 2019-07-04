@@ -1,0 +1,7 @@
+{
+    "$id": "rol_array.schema.json",
+    "type": "array",
+    "items": {
+        "$ref": "rol.schema.json"
+    }
+}
